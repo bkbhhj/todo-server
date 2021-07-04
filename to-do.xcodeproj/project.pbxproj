@@ -14,7 +14,7 @@
 		E9C125BB2690DDBE004CAA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C125BA2690DDBE004CAA30 /* Assets.xcassets */; };
 		E9C125BE2690DDBE004CAA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C125BC2690DDBE004CAA30 /* LaunchScreen.storyboard */; };
 		E9C125C92690E7DE004CAA30 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C125C82690E7DE004CAA30 /* TodoCell.swift */; };
-		E9C125CB2691B9D1004CAA30 /* todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C125CA2691B9D1004CAA30 /* todo.swift */; };
+		E9C125CB2691B9D1004CAA30 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C125CA2691B9D1004CAA30 /* Todo.swift */; };
 		E9C125CD2691BAAF004CAA30 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C125CC2691BAAF004CAA30 /* APIError.swift */; };
 		E9C125D02691BFBB004CAA30 /* Network Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C125CF2691BFBB004CAA30 /* Network Service.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		E9C125BD2690DDBE004CAA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C125BF2690DDBE004CAA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C125C82690E7DE004CAA30 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
-		E9C125CA2691B9D1004CAA30 /* todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo.swift; sourceTree = "<group>"; };
+		E9C125CA2691B9D1004CAA30 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		E9C125CC2691BAAF004CAA30 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E9C125CF2691BFBB004CAA30 /* Network Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Service.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +81,7 @@
 		E9C125C52690E75F004CAA30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E9C125CA2691B9D1004CAA30 /* todo.swift */,
+				E9C125CA2691B9D1004CAA30 /* Todo.swift */,
 				E9C125CC2691BAAF004CAA30 /* APIError.swift */,
 			);
 			path = Model;
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C125CB2691B9D1004CAA30 /* todo.swift in Sources */,
+				E9C125CB2691B9D1004CAA30 /* Todo.swift in Sources */,
 				E9C125B62690DDBD004CAA30 /* TodoVC.swift in Sources */,
 				E9C125D02691BFBB004CAA30 /* Network Service.swift in Sources */,
 				E9C125B22690DDBD004CAA30 /* AppDelegate.swift in Sources */,
