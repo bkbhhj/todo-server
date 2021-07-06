@@ -13,28 +13,39 @@ class TodoVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var prioritySegment: UISegmentedControl!
     @IBOutlet var todoTable: UITableView!
     
-    
     var todos = Array<Todo>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         todoTable.delegate = self
         todoTable.dataSource = self
+        
         getTodos()
     }
 
     func getTodos() {
- 
-        
-        NetworkService.shared.getTodos { todos in
+        NetworkService.shared.getTodos(onSuccess: {todos in
             self.todos = todos.items
             self.todoTable.reloadData()
-        } onError: { errorMessage in
+        }) { (errorMessage) in
             debugPrint(errorMessage)
         }
 
     }
 
     @IBAction func addTodo(_ sender: Any) {
+        guard let todoItem = todoItemTxt.text else {return}
+       
+        let todo = Todo(item: todoItem, priority: prioritySegment.selectedSegmentIndex)
+        NetworkService.shared.addTodo(todo: todo, onSuccess: {todos in
+            self.todoItemTxt.text = ""
+            self.todos = todos.items
+            self.todoTable.reloadData()
+        }, onError: { errorMessage in
+            debugPrint(errorMessage)
+        })
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
